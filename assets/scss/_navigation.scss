@@ -7,6 +7,13 @@
 	display: block;
 	z-index: 5;
 	position: static;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#navigation a {
+	letter-spacing: 0.1em;
 }
 
 #erik_text {
@@ -25,6 +32,7 @@
 	@include transition (all 0.5s ease);
 	position: absolute;
 	z-index: 1000;
+	display: none;
 
 	@include respond-to(medium) {
 		margin: 0 0 0 2%;
@@ -72,24 +80,21 @@
 	display: none;
 
 	@include respond-to(medium) {
-		display: inline;
+		display: none;
 	}
 }
 
 /* NAV LEFT
    ========================================================================== */
 
-#articles_nav {
-	display: block !important;
-	width: auto;
-}
-
 #nav_left {
 	width: 49.5%;
 	margin: 0 0.5% 0 0;
-	float: left;
 	background: #999;
-	padding: 0; 
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 
 	@include respond-to(medium) {
 		width:  70%;
@@ -102,6 +107,21 @@
 	@include respond-to(xlarge) {
 		width:  75%;
 	}
+}
+
+.articles_list {
+	width: 100px;
+	text-align: right;
+}
+
+.tv_list {
+	width: 100px;
+	text-align: right;
+}
+
+.radio_list {
+	width: 100px;
+	text-align: right;
 }
 
 #nav_left ul {
@@ -136,45 +156,51 @@
 #articles_nav {
 	background: #999;
 	padding: 7px 10px 0 0;
+	display: block;
 }
 
-#nav_left ul, #nav_left li {
+#tv_nav {
+	background: #999;
+	padding: 7px 10px 0 0;
+	display: block;
+}
+
+#radio_nav {
+	background: #999;
+	padding: 7px 10px 0 0;
+	display: block;
+}
+
+#nav_left li {
 	list-style: none;
 	margin: 0;
 }
 
-#nav_left ul li.hover,
-#nav_left ul li:hover {
-	position: relative; 
-	z-index: 599; 
+#nav_left li:hover {
+	position: relative;
+	z-index: 599;
 	cursor: default;
 }
 
-#nav_left ul ul {
-	visibility: hidden; 
-	top: 100%; 
-	left: 0; 
+#nav_left li ul {
+	visibility: hidden;
+	top: 2px;
 	z-index: 598;
+	width: 185px;
 }
 
-#nav_left ul li:hover > ul { 
+#nav_left li:hover > ul {
 	visibility: visible;
 }
 
-#nav_left ul ul li {
-	font-weight: normal; 
+#nav_left li ul li {
+	font-weight: normal;
 	height: 30px;
 }
 
-#nav_left ul li:hover > a {
+#nav_left li:hover > a {
       color: #FFF;
       display: visible !important;
-}
-
-#nav_left:after, #nav_left ul:after {
-    content: '';
-    display: block;
-    clear: both; 
 }
 
 .awe_font {
@@ -375,30 +401,30 @@
 }
 
 #nav_right ul {
-	position: relative; 
-	z-index: 597; 
+	position: relative;
+	z-index: 597;
 }
 
-#nav_right ul li.hover,
-#nav_right ul li:hover {
-	position: relative; 
-	z-index: 599; 
+#nav_right li.hover,
+#nav_right li:hover {
+	position: relative;
+	z-index: 599;
 	cursor: default;
 }
 
-#nav_right ul ul {
-	visibility: hidden; 
-	top: 100%; 
-	left: 0; 
+#nav_right li ul {
+	visibility: hidden;
+	top: 100%;
+	left: 0;
 	z-index: 598;
 }
 
-#nav_right ul li:hover > ul { 
+#nav_right li:hover > ul {
 	visibility: visible;
 }
 
 #nav_right ul ul li {
-	font-weight: normal; 
+	font-weight: normal;
 	height: 30px;
 }
 
@@ -410,7 +436,7 @@
 #nav_right:after, #nav_right ul:after {
     content: '';
     display: block;
-    clear: both; 
+    clear: both;
 }
 
 .nav_about a {

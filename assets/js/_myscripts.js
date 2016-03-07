@@ -75,6 +75,8 @@ $(window).load(function () {
 $(document).ready(function (){
 
     $( '#articles_nav li:has(ul)' ).doubleTapToGo();
+    $( '#tv_nav li:has(ul)' ).doubleTapToGo();
+    $( '#radio_nav li:has(ul)' ).doubleTapToGo();
     $( '#info_nav li:has(ul)' ).doubleTapToGo();
     $( '.swipebox' ).swipebox();
 
