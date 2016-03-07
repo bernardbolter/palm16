@@ -1,0 +1,31 @@
+/*!
+	Theme Name: palm16
+	Author: Bernard John Bolter IV
+	Version: 2.0
+	Author URI: www.smoothism.com
+	Theme URI: www.augustinpalm.se
+	Tags: fluid-layout
+	Description: Website of Erik Augustin Palm | Journalist
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "vendor/normalize";
+@import "vendor/bourbon/bourbon";
+@import "font-awesome";
+@import "grid-settings";
+@import "base";
+@import "typography";
+@import "breadcrumbs";
+@import "wp-base";
+@import "header";
+@import "navigation";
+@import "content";
+@import "post-formats";
+@import "footer";
+@import "short_bio";
+@import "about";
+@import "single";
+@import "cat";
+@import "swipebox";
+@import "photo";

@@ -1,0 +1,135 @@
+#photo_bio_box {
+	width: 100%;
+	margin: 20px 0;
+	display: block;
+	color: #333;
+	@include transition (all 0.5s ease);
+
+	@include respond-to(medium) {
+		background: #fff;
+		overflow: hidden;
+		width: 80%;
+		margin: 20px auto;
+	}
+
+	@include respond-to(large) {
+		width: 50%;
+		margin: 20px 0 20px 35%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 40%;
+		margin: 20px 0 20px 50%;
+	}
+}
+
+.photo_bio_text {
+	font-family: $body-font;
+	@include font-size(1.6);
+	font-weight: 400;
+	color: #777;
+	text-indent: 20px;
+	margin: 0;
+	width: 90%;
+	margin: 0 5%;
+	text-transform: none;
+	line-height: 24px;
+
+	@include respond-to(medium) {
+		text-indent: 0;
+		margin: 5%;
+	}
+}
+
+.photo_bio_bold {
+	font-weight: 700;
+}
+
+.photo_bio_text a {
+	color: #222;
+}
+
+.photo_bio_text a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.photo_bio_plus {
+	width: 100%;
+	display: none;
+	text-align: left;
+
+	@include respond-to(medium) {
+		margin: 20px 20px 0 20px;
+		float: left;
+		width: 36px;
+		display: block; 
+	}
+}
+
+.photo_bio_plus i {
+	font-size: 45px;
+	margin: 0;
+}
+
+#photo_loop_container {
+	width: 320px;
+	margin: 2% auto;
+	display: block;
+	overflow: hidden;
+
+	@media (min-width: 640px) {
+		width: 640px;
+	}
+
+	@media (min-width: 960px) {
+		width: 960px;
+	}
+
+	@media (min-width: 1280px) {
+		width: 1280px;
+	}
+}
+
+.photo_box {
+	float: left;
+	margin: 10px 10px 0 10px;
+	width: 300px;
+
+	a {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	img {
+		width: 100%;
+		float: left;
+		box-shadow: 2px 2px 2px #777;
+	}
+
+	p {
+		width: 100%;
+		float: left;
+		background: white;
+		font-family: $base-font;
+		padding: 10px 20px;
+		@include font-size(1.6);
+		color: #666;
+		line-height: 20px;
+		margin-top: 10px;
+
+		span {
+			font-family: $body-font;
+			@include font-size(1.2);
+			color: #999;
+			display: block;
+			letter-spacing: 0.05em;
+		}
+	}
+}
+
+
+
+
+
+

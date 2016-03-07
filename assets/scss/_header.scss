@@ -1,0 +1,92 @@
+#head_back {
+	width: 100%;
+	display: block;
+	background: #070707 url(gfx/top_portrait_mobile.jpg) no-repeat center center;
+	height: 232px;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+
+	@include respond-to(medium) {
+		background: #070707 url(gfx/top_portrait.jpg) no-repeat center center;
+	}
+}
+
+#title_back {
+	width: 100%;
+	background: rgba(125,125,125,0.8);
+	height: 200px;
+	position: static;
+	display: block;
+	z-index: -1;
+}
+
+#title_text_wrap {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	padding: 19px 0 0 0;
+
+	@include respond-to(medium) {
+		padding: 48px 0 0 0;
+	}
+
+	@include respond-to(large) {
+		padding: 1px 0 0 0;
+	}
+}
+
+#title_text {
+	font-family: $base-font;
+	color: #ddd;
+	font-weight: 200;
+	text-decoration: none;
+	@include font-size(4.6);
+	display: block;
+	margin: 0;
+	text-align: center;
+	@include transition (all 0.5s ease);
+	line-height: 48px;
+
+	@include respond-to(medium) {
+		letter-spacing: 0.05em;
+		@include font-size(4);
+		padding: 30px 0 0 0;
+		line-height: auto;
+	}
+
+	@include respond-to(large) {
+		letter-spacing: 0.05em;
+		@include font-size(5.6);
+		padding: 60px 0 0 0;
+	}
+
+	@include respond-to(xlarge) {
+		letter-spacing: 0.1em;
+		@include font-size(6.6);
+		padding: 60px 0 0 0;
+	}
+}
+
+#descript_text {
+	font-family: $base-font;
+	@include font-size(1.5);
+	color: #eee;
+	letter-spacing: 0.5em;
+	text-align: center;
+
+	@include respond-to(medium) {
+		@include font-size(1.7);
+		padding: 5px 0 0 0;
+	}
+
+	@include respond-to(large) {
+		@include font-size(1.9);
+		padding: 10px 0 0 0;
+	}
+
+	@include respond-to(xlarge) {
+		@include font-size(2.1);
+		padding: 15px 0 0 0;
+	}
+}

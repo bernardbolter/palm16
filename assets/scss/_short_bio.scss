@@ -1,0 +1,96 @@
+#short_bio_box {
+	width: 100%;
+	margin: 20px 0 0 0;
+	display: block;
+	color: #333;
+	@include transition (all 0.5s ease);
+
+	@include respond-to(medium) {
+		background: #fff;
+		overflow: hidden;
+		width: 80%;
+		margin: 20px auto;
+	}
+
+	@include respond-to(large) {
+		width: 65%;
+		margin: 20px 0 10px 25%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 55%;
+		margin: 20px 0 10px 35%;
+	}
+}
+
+.short_bio_text {
+	font-family: $body-font;
+	@include font-size(1.6);
+	font-weight: 400;
+	color: #333;
+	text-indent: 20px;
+	margin: 0;
+	width: 90%;
+	margin: 0 5%;
+	text-transform: none;
+	line-height: 24px;
+
+	@include respond-to(medium) {
+		text-indent: 0;
+		margin: 5% 5% 0 5%;
+	}
+}
+
+.short_bio_bold {
+	font-weight: 700;
+}
+
+.short_bio_plus {
+	width: 100%;
+	display: none;
+	text-align: left;
+
+	@include respond-to(medium) {
+		margin: 20px 20px 0 20px;
+		float: left;
+		width: 36px;
+		display: block; 
+	}
+}
+
+.short_bio_click {
+	display: block;
+	margin: 5px 0 0 0;
+	@include font-size(1.4);
+	text-align: right;
+	color: #777;
+}
+
+.short_bio_plus i {
+	font-size: 45px;
+	margin: 0;
+}
+
+.short_bio_text_icons {
+	width: 90%;
+	float: left;
+	display: block;
+	margin: 0 5%;
+}
+
+.short_bio_text_icons li {
+	list-style: none;
+}
+
+.short_bio_text_icons li a {
+	display: inline-block;
+	float: right;
+	padding: 4px;
+	color: #666;
+	@include font-size(2.3);
+	@include transition (all 0.5s ease);
+}
+
+.short_bio_text_icons li a:hover {
+	color: #111;
+}

@@ -1,0 +1,42 @@
+// Import helpers
+@import "vendor/neat/neat-helpers";
+
+// Change the grid settings
+$column: 54px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 980px;
+
+// Define your breakpoints
+$small: 480px;
+$medium: 481px;
+$large: 769px;
+$xlarge: 1025px;
+
+@mixin respond-to($media) {
+  @if $media == small {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == medium {
+    @media only screen and (min-width: $small + 1) { @content; }
+  }
+  @else if $media == large {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @else if $media == xlarge {
+    @media only screen and (min-width: $xlarge) { @content; }
+  }
+}
+
+// Make the grid
+@import "vendor/neat/neat";
+
+// Omega reset
+@mixin omega-grid-reset($nth, $num-grid: 12) {
+    &:nth-child(#{$nth}) { margin-right: flex-gutter($num-grid); }
+    &:nth-child(#{$nth}+1) { clear: none }
+}
+
+// Variables
+$fg-column: $column;
+$fg-gutter: $gutter;

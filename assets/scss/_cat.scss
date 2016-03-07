@@ -1,0 +1,147 @@
+#cat_loop_list {
+	width: 270px;
+	margin: 2% auto;
+	display: block;
+	overflow: hidden;
+
+	@media (min-width: 440px) {
+		width: 440px;
+	}
+
+	@media (min-width: 660px) {
+		width: 660px;
+	}
+
+	@media (min-width: 880px) {
+		width: 880px;
+	}
+
+	@media (min-width: 1100px) {
+		width: 1100px;
+	}
+
+	@media (min-width: 1320px) {
+		width: 1320px;
+	}
+}
+
+.item {
+	float: left;
+	margin: 10px;
+	width: 250px;
+
+	@media (min-width: 440px) {
+		width: 200px;
+	}
+}
+
+.item img {
+	box-shadow: 2px 2px 2px #777;
+
+	@media (min-width: 440px) {
+		width: 100%;
+	}
+}
+
+.item a {
+	display: inline-block;
+	@include opacity(0.8);
+	@include transition (all 0.5s ease);
+}
+
+.item a:hover {
+	@include opacity(1);
+}
+
+.cat_loop_text_box {
+	width: 250px;
+	padding: 10px;
+	background: #fff;
+
+		@media (min-width: 440px) {
+		width: 200px;
+	}
+}
+
+.cat_loop_text_box h2 {
+	font-family: $base-font;
+	@include font-size(1.8);
+	text-align: left;
+	color: #666;
+	margin: 5px 0 15px;
+	font-weight: 200;
+	letter-spacing: 0.05em;
+
+	@media (min-width: 440px) {
+		@include font-size(1.6);
+	}
+}
+
+.cat_loop_text_box p {
+	font-family: $body-font;
+	@include font-size(1);
+	color: #888;
+	margin: 0;
+	float: left;
+}
+
+.cat_loop_text_box h5 {
+	font-family: $body-font;
+	@include font-size(1.1);
+	color: #666;
+	float: right;
+	margin: 0;
+}
+
+.cat_loop_text_box h3 {
+	font-family: $base-font;
+	color: #eee;
+	@include font-size(1.2);
+	padding: 6px 0 3px;
+	text-align: center;
+	margin: 12px 0 0 0;
+}
+
+.clear_date {
+	@include clearfix;
+}
+
+.cover_music {
+	background: $music;
+}
+
+.cover_film {
+	background: $film;
+}
+
+.cover_tv {
+	background: $tv;
+}
+
+.cover_art {
+	background: $art;
+}
+
+.cover_society {
+	background: $society;
+}
+
+.cover_food {
+	background: $food;
+}
+
+.cover_lit {
+	background: $lit;
+}
+
+.cover_tech {
+	background: $tech;
+}
+
+.cover_about {
+	background: $about;
+}
+
+.cover_photo {
+	background: $photo;
+}

@@ -1,0 +1,478 @@
+/* NAVIGATION
+   ========================================================================== */
+
+#navigation {
+	width: 100%;
+	height: 30px;
+	display: block;
+	z-index: 5;
+	position: static;
+}
+
+#erik_text {
+	color: #eee;
+	text-decoration: none;
+	font-family: $base-font;
+	@include font-size(2);
+	line-height: 23px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 0 0 0 4%;
+	display: none;
+	float: left;
+	text-decoration: none;
+	padding-top: 7px;
+	@include transition (all 0.5s ease);
+	position: absolute;
+	z-index: 1000;
+
+	@include respond-to(medium) {
+		margin: 0 0 0 2%;
+	}
+
+	@include respond-to(large) {
+		margin: 0 0 0 15%;
+	}
+
+	@include respond-to(xlarge) {
+		margin: 0 0 0 25%;
+	}
+}
+
+#erik_text_single {
+	color: #eee;
+	text-decoration: none;
+	font-family: $base-font;
+	@include font-size(2);
+	line-height: 23px;
+	letter-spacing: 0.1em;
+	margin: 0 0 0 4%;
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	padding-top: 7px;
+	@include transition (all 0.5s ease);
+	position: absolute;
+	z-index: 1000;
+
+	@include respond-to(medium) {
+		margin: 0 0 0 4%;
+	}
+
+	@include respond-to(large) {
+		margin: 0 0 0 12%;
+	}
+
+	@include respond-to(xlarge) {
+		margin: 0 0 0 25%;
+	}
+}
+
+.hide_erik {
+	display: none;
+
+	@include respond-to(medium) {
+		display: inline;
+	}
+}
+
+/* NAV LEFT
+   ========================================================================== */
+
+#articles_nav {
+	display: block !important;
+	width: auto;
+}
+
+#nav_left {
+	width: 49.5%;
+	margin: 0 0.5% 0 0;
+	float: left;
+	background: #999;
+	padding: 0; 
+
+	@include respond-to(medium) {
+		width:  70%;
+	}
+
+	@include respond-to(large) {
+		width:  75%;
+	}
+
+	@include respond-to(xlarge) {
+		width:  75%;
+	}
+}
+
+#nav_left ul {
+	margin: 0;
+	text-align: right;
+	height: 30px;
+	padding: 0;
+	width: auto;
+	position: relative;
+	z-index: 597;
+
+	@include respond-to(large) {
+		float: right;
+	}
+
+	@include respond-to(xlarge) {
+		float: right;
+	}
+}
+
+#nav_left ul li a {
+	color: #eee;
+	text-decoration: none;
+	font-family: $base-font;
+	@include font-size(1.2);
+	line-height: 23px;
+	letter-spacing: 0.1em;
+	padding: 7px 10px 0 7px;
+	display: inline-block;
+}
+
+#articles_nav {
+	background: #999;
+	padding: 7px 10px 0 0;
+}
+
+#nav_left ul, #nav_left li {
+	list-style: none;
+	margin: 0;
+}
+
+#nav_left ul li.hover,
+#nav_left ul li:hover {
+	position: relative; 
+	z-index: 599; 
+	cursor: default;
+}
+
+#nav_left ul ul {
+	visibility: hidden; 
+	top: 100%; 
+	left: 0; 
+	z-index: 598;
+}
+
+#nav_left ul li:hover > ul { 
+	visibility: visible;
+}
+
+#nav_left ul ul li {
+	font-weight: normal; 
+	height: 30px;
+}
+
+#nav_left ul li:hover > a {
+      color: #FFF;
+      display: visible !important;
+}
+
+#nav_left:after, #nav_left ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+.awe_font {
+	display: inline-block;
+	padding: 0 9px 0;
+	visibility: hidden;
+}
+
+.nav_music a {
+	background: shade($music, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_music a:hover {
+	background: $music;
+	@include opacity(1);
+}
+
+.nav_music a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_film a {
+	background: shade($film, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_film a:hover {
+	background: $film;
+	@include opacity(1);
+}
+
+.nav_film a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_tv a {
+	background: shade($tv, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_tv a:hover {
+	background: $tv;
+	@include opacity(1);
+}
+
+.nav_tv a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_art a {
+	background: shade($art, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_art a:hover {
+	background: $art;
+	@include opacity(1);
+}
+
+.nav_art a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_society a {
+	background: shade($society, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_society a:hover {
+	background: $society;
+	@include opacity(1);
+}
+
+.nav_society a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_food a {
+	background: shade($food, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_food a:hover {
+	background: $food;
+	@include opacity(1);
+}
+
+.nav_food a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_lit a {
+	background: shade($lit, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_lit a:hover {
+	background: $lit;
+	@include opacity(1);
+}
+
+.nav_lit a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_tech a {
+	background: shade($tech, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_tech a:hover {
+	background: $tech;
+	@include opacity(1);
+}
+
+.nav_tech a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_cover a {
+	background: shade($cover, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_cover a:hover {
+	background: $cover;
+	@include opacity(1);
+}
+
+.nav_cover a:hover .awe_font {
+	visibility: visible;
+}
+
+/* NAV RIGHT
+   ========================================================================== */
+
+#nav_right {
+	width: 49.5%;
+	margin: 0 0 0 0.5%;
+	float: left;
+	background: #999;
+
+	@include respond-to(medium) {
+		width:  29%;
+	}
+
+	@include respond-to(large) {
+		width:  24.5%;
+		margin: 0;
+	}
+
+	@include respond-to(xlarge) {
+		width:  24.5%;
+		margin: 0;
+	}
+}
+
+#nav_right ul {
+	margin: 0;
+	text-align: left;
+	height: 30px;
+	padding: 0;
+}
+
+#nav_right ul li a {
+	color: #eee;
+	text-decoration: none;
+	font-family: $base-font;
+	@include font-size(1.2);
+	line-height: 23px;
+	letter-spacing: 0.1em;
+	padding: 7px 0 0 10px;
+	display: inline-block;
+}
+
+#nav_right ul, #nav_right li {
+	list-style: none;
+	margin: 0;
+}
+
+#nav_right ul {
+	position: relative; 
+	z-index: 597; 
+}
+
+#nav_right ul li.hover,
+#nav_right ul li:hover {
+	position: relative; 
+	z-index: 599; 
+	cursor: default;
+}
+
+#nav_right ul ul {
+	visibility: hidden; 
+	top: 100%; 
+	left: 0; 
+	z-index: 598;
+}
+
+#nav_right ul li:hover > ul { 
+	visibility: visible;
+}
+
+#nav_right ul ul li {
+	font-weight: normal; 
+	height: 30px;
+}
+
+#nav_right ul li:hover > a {
+      color: #FFF;
+      display: visible !important;
+}
+
+#nav_right:after, #nav_right ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+.nav_about a {
+	background: shade($about, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_about a:hover {
+	background: $about;
+	@include opacity(1);
+}
+
+.nav_about a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_photo a {
+	background: shade($photo, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_photo a:hover {
+	background: $photo;
+	@include opacity(1);
+}
+
+.nav_photo a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_other a {
+	background: shade($other, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_other a:hover {
+	background: $other;
+	@include opacity(1);
+}
+
+.nav_other a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_contact a {
+	background: shade($contact, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_contact a:hover {
+	background: $contact;
+	@include opacity(1);
+}
+
+.nav_contact a:hover .awe_font {
+	visibility: visible;
+}
