@@ -16,6 +16,16 @@
 	letter-spacing: 0.1em;
 }
 
+.erik_text_wrap {
+	display: none;
+
+	@include respond-to(large) {
+		display: block;
+		position: absolute;
+		left: 3%;
+	}
+}
+
 #erik_text {
 	color: #eee;
 	text-decoration: none;
@@ -23,36 +33,12 @@
 	@include font-size(2);
 	line-height: 23px;
 	letter-spacing: 0.1em;
-	text-align: center;
 	margin: 0 0 0 4%;
-	display: none;
-	float: left;
-	text-decoration: none;
 	padding-top: 7px;
-	@include transition (all 0.5s ease);
 	position: absolute;
 	z-index: 1000;
+	width: 300px;
 	display: none;
-
-	@include respond-to(medium) {
-		margin: 0 0 0 2%;
-	}
-
-	@include respond-to(large) {
-		margin: 0 0 0 15%;
-	}
-
-	@include respond-to(xlarge) {
-		margin: 0 0 0 25%;
-	}
-}
-
-.fa {
-	display: none !important;
-
-	@include respond-to(medium) {
-		display: inline-block !important;
-	}
 }
 
 #erik_text_single {
@@ -67,7 +53,7 @@
 	float: left;
 	text-decoration: none;
 	padding-top: 7px;
-	@include transition (all 0.5s ease);
+	@include transition (all 0.5s ease-out);
 	position: absolute;
 	z-index: 1000;
 
@@ -84,14 +70,6 @@
 	}
 }
 
-.hide_erik {
-	display: none;
-
-	@include respond-to(medium) {
-		display: none;
-	}
-}
-
 /* NAV LEFT
    ========================================================================== */
 
@@ -102,52 +80,100 @@
 	padding: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: flex-start;
 
-	@include respond-to(large) {
-		width:  75%;
+	@include respond-to(medium) {
+		justify-content: flex-end;
 	}
 
-	@include respond-to(xlarge) {
+	@include respond-to(large) {
 		width:  75%;
 	}
 }
 
 .articles_list {
-	width: 100px;
-	text-align: right;
+	width: 95px;
+	text-align: center;
+
+	@include respond-to(medium) {
+		width: 100px;
+		text-align: right;
+	}
 }
 
 #articles_drop {
-	left: -116px;
+	left: 0px;
+
+	@include respond-to(medium) {
+		left: -116px;
+	}
 }
 
 .tv_list {
-	width: 50px;
-	text-align: right;
+	width: 40px;
+	text-align: center;
+
+	@include respond-to(medium) {
+		width: 50px;
+		text-align: right;
+	}
+
+	@include respond-to(large) {
+		width: 125px;
+		text-align: right;
+		}
 }
 
 #tv_drop {
-	left: -167px;
+	left: 0px;
+
+	@include respond-to(medium) {
+		left: -170px;
+	}
+
+	@include respond-to(large) {
+		left: -95px;
+	}
 }
 
 .radio_list {
-	width: 85px;
-	text-align: right;
+	width: 70px;
+	text-align: center;
+
+	@include respond-to(medium) {
+		width: 95px;
+		text-align: right;
+	}
+
+	@include respond-to(large) {
+		width: 85px;
+	}
 }
 
 #radio_drop {
-	left: -135px;
+	left: 0px;
+
+	@include respond-to(medium) {
+		left: -125px;
+	}
+
+	@include respond-to(large) {
+		left: -135px;
+	}
 }
 
 #nav_left ul {
 	margin: 0;
-	text-align: right;
+	text-align: left;
 	height: 30px;
 	padding: 0;
 	width: auto;
 	position: relative;
 	z-index: 597;
+
+	@include respond-to(medium) {
+		text-align: right;
+	}
 }
 
 #nav_left ul li a {
@@ -157,14 +183,36 @@
 	@include font-size(1.2);
 	line-height: 23px;
 	letter-spacing: 0.1em;
-	padding: 7px 10px 0 7px;
+	padding: 7px 10px 0 12px;
 	display: inline-block;
+
+	@include respond-to(medium) {
+		padding: 7px 10px 0 7px;
+	}
+}
+
+#nav_left li ul li i {
+	float: right;
+	padding: 3px 0 0 9px;
+
+	@include respond-to(medium) {
+		float: none;
+		padding: 0 9px 0;
+	}
 }
 
 #articles_nav {
 	background: #999;
 	padding: 7px 0 0 0;
 	display: block;
+}
+
+.tv_nav_hide {
+		display: none;
+
+		@include respond-to(large) {
+			display: inline-block;
+		}
 }
 
 #tv_nav {
@@ -177,6 +225,14 @@
 	background: #999;
 	padding: 7px 10px 0 0;
 	display: block;
+
+	@include respond-to(medium) {
+		padding: 7px 20px 0 0;
+	}
+
+	@include respond-to(large) {
+		padding: 7px 10px 0 0;
+	}
 }
 
 #nav_left li {
@@ -217,8 +273,24 @@
 	visibility: hidden;
 }
 
+.nav_cover a {
+	background: shade($cover, 60%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease-out);
+}
+
+.nav_cover a:hover {
+	background: $cover;
+	@include opacity(1);
+}
+
+.nav_cover a:hover .awe_font {
+	visibility: visible;
+}
+
 .nav_music a {
-	background: shade($music, 30%);
+	background: shade($music, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -234,7 +306,7 @@
 }
 
 .nav_film a {
-	background: shade($film, 30%);
+	background: shade($film, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -250,7 +322,7 @@
 }
 
 .nav_tv a {
-	background: shade($tv, 30%);
+	background: shade($tv, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -266,7 +338,7 @@
 }
 
 .nav_art a {
-	background: shade($art, 30%);
+	background: shade($art, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -282,7 +354,7 @@
 }
 
 .nav_society a {
-	background: shade($society, 30%);
+	background: shade($society, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -298,7 +370,7 @@
 }
 
 .nav_food a {
-	background: shade($food, 30%);
+	background: shade($food, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -314,7 +386,7 @@
 }
 
 .nav_lit a {
-	background: shade($lit, 30%);
+	background: shade($lit, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -330,7 +402,7 @@
 }
 
 .nav_tech a {
-	background: shade($tech, 30%);
+	background: shade($tech, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -345,19 +417,99 @@
 	visibility: visible;
 }
 
-.nav_cover a {
-	background: shade($cover, 30%);
+.nav_japan a {
+	background: shade($japan, 60%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
 }
 
-.nav_cover a:hover {
-	background: $cover;
+.nav_japan a:hover {
+	background: $japan;
 	@include opacity(1);
 }
 
-.nav_cover a:hover .awe_font {
+.nav_japan a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_copywriting a {
+	background: shade($copywriting, 60%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease-in);
+}
+
+.nav_copywriting a:hover {
+	background: $copywriting;
+	@include opacity(1);
+}
+
+.nav_copywriting a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_translation a {
+	background: shade($translation, 60%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease-in);
+}
+
+.nav_translation a:hover {
+	background: $translation;
+	@include opacity(1);
+}
+
+.nav_translation a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_tv-factory {
+	background: shade($tv-factory, 60%);
+	@include opacity(0.85);
+	display: inline-block;
+	@include transition (all 0.5s ease-in);
+}
+
+.nav_tv-factory a:hover {
+	background: $tv-factory;
+	@include opacity(1);
+}
+
+.nav_tv-factory a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_tv-interviews {
+	background: shade($tv-interviews, 60%);
+	@include opacity(0.85);
+	display: inline-block;
+	@include transition (all 0.5s ease-in);
+}
+
+.nav_tv-interviews a:hover {
+	background: $tv-interviews;
+	@include opacity(1);
+}
+
+.nav_tv-interviews a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_radio-interviews {
+	background: shade($radio-interviews, 60%);
+	@include opacity(0.85);
+	display: inline-block;
+	@include transition (all 0.5s ease-in);
+}
+
+.nav_radio-interviews a:hover {
+	background: $radio-interviews;
+	@include opacity(1);
+}
+
+.nav_radio-interviews a:hover .awe_font {
 	visibility: visible;
 }
 
@@ -365,10 +517,14 @@
    ========================================================================== */
 
 #nav_right {
-	width:80px;
+	width:60px;
 	margin: 0 0 0 0.5%;
 	background: #999;
 	padding: 0;
+
+	@include respond-to(medium) {
+		width:  80px;
+	}
 
 	@include respond-to(large) {
 		width:  24.5%;
@@ -390,13 +546,23 @@
 
 #info_nav {
 	background: #999;
-	padding: 7px 0 0 13px;
+	padding: 7px 0 0 0;
 	display: block;
+	text-align: center;
+
+	@include respond-to(large) {
+		text-align: initial;
+		padding: 7px 0 0 13px;
+	}
 }
 
 #info_drop {
 	top: 2px;
-	left: -110px;
+	left: -130px;
+
+	@include respond-to(medium) {
+		left: -110px;
+	}
 
 	@include respond-to(large) {
 		left: 0;
@@ -426,8 +592,12 @@
 	@include font-size(1.2);
 	line-height: 23px;
 	letter-spacing: 0.1em;
-	padding: 7px 0 0 10px;
+	padding: 7px 20px 0 2px;
 	display: inline-block;
+
+	@include respond-to(large) {
+		padding: 7px 0 0 10px;
+	}
 }
 
 #nav_right ul, #nav_right li {
@@ -471,6 +641,16 @@
     content: '';
     display: block;
     clear: both;
+}
+
+#nav_right li ul li i {
+	float: left;
+	padding: 4px 9px 0;
+
+	@include respond-to(large) {
+		float: none;
+		padding: 0 9px 0;
+	}
 }
 
 .nav_about a {
