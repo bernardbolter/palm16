@@ -13,12 +13,15 @@
 					<li class="nav_music"><a href="<?php echo home_url( '/' ); ?>music"><i class="fa fa-plus awe_font"></i>MUSIC</a></li>
 					<li class="nav_film"><a href="<?php echo home_url( '/' ); ?>film"><i class="fa fa-plus awe_font"></i>FILM</a></li>
 					<li class="nav_tv"><a href="<?php echo home_url( '/' ); ?>television"><i class="fa fa-plus awe_font"></i>TELEVISION</a></li>
-					<li class="nav_art"><a href="<?php echo home_url( '/' ); ?>art-fashion"><i class="fa fa-plus awe_font"></i>ART & FASHION</a></li>
+					<li class="nav_art"><a href="<?php echo home_url( '/' ); ?>art-fashion"><i class="fa fa-plus awe_font"></i>ART, DESIGN & FASHION</a></li>
 					<li class="nav_society"><a href="<?php echo home_url( '/' ); ?>society-politics"><i class="fa fa-plus awe_font"></i>SOCIETY & POLITICS</a></li>
 					<li class="nav_food"><a href="<?php echo home_url( '/' ); ?>food-travel"><i class="fa fa-plus awe_font"></i>FOOD & TRAVEL</a></li>
 					<li class="nav_lit"><a href="<?php echo home_url( '/' ); ?>literature"><i class="fa fa-plus awe_font"></i>LITERATURE</a></li>
 					<li class="nav_tech"><a href="<?php echo home_url( '/' ); ?>it-media-tech"><i class="fa fa-plus awe_font"></i>IT, MEDIA & TECH</a></li>
+					<li class="nav_japan"><a href="<?php echo home_url( '/' ); ?>japan"><i class="fa fa-plus awe_font"></i>JAPAN</a></li>
 					<li class="nav_cover"><a href="<?php echo home_url( '/' ); ?>cover-stories"><i class="fa fa-plus awe_font"></i>COVER STORIES</a></li>
+					<li class="nav_copywriting"><a href="<?php echo home_url( '/' ); ?>copywriting"><i class="fa fa-plus awe_font"></i>COPYWRITING</a></li>
+					<li class="nav_tanslation"><a href="<?php echo home_url( '/' ); ?>translation"><i class="fa fa-plus awe_font"></i>TRANSLATION</a></li>
 				</ul> <!-- articles_drop -->
 			</li>
 			<li class="tv_list">

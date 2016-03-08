@@ -47,6 +47,14 @@
 	}
 }
 
+.fa {
+	display: none !important;
+
+	@include respond-to(medium) {
+		display: inline-block !important;
+	}
+}
+
 #erik_text_single {
 	color: #eee;
 	text-decoration: none;
@@ -88,17 +96,13 @@
    ========================================================================== */
 
 #nav_left {
-	width: 49.5%;
+	width: 100%;
 	margin: 0 0.5% 0 0;
 	background: #999;
 	padding: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-
-	@include respond-to(medium) {
-		width:  70%;
-	}
 
 	@include respond-to(large) {
 		width:  75%;
@@ -114,14 +118,26 @@
 	text-align: right;
 }
 
+#articles_drop {
+	left: -116px;
+}
+
 .tv_list {
-	width: 100px;
+	width: 50px;
 	text-align: right;
 }
 
+#tv_drop {
+	left: -167px;
+}
+
 .radio_list {
-	width: 100px;
+	width: 85px;
 	text-align: right;
+}
+
+#radio_drop {
+	left: -135px;
 }
 
 #nav_left ul {
@@ -132,14 +148,6 @@
 	width: auto;
 	position: relative;
 	z-index: 597;
-
-	@include respond-to(large) {
-		float: right;
-	}
-
-	@include respond-to(xlarge) {
-		float: right;
-	}
 }
 
 #nav_left ul li a {
@@ -155,13 +163,13 @@
 
 #articles_nav {
 	background: #999;
-	padding: 7px 10px 0 0;
+	padding: 7px 0 0 0;
 	display: block;
 }
 
 #tv_nav {
 	background: #999;
-	padding: 7px 10px 0 0;
+	padding: 7px 5px 0 0;
 	display: block;
 }
 
@@ -186,7 +194,7 @@
 	visibility: hidden;
 	top: 2px;
 	z-index: 598;
-	width: 185px;
+	width: 220px;
 }
 
 #nav_left li:hover > ul {
@@ -357,14 +365,10 @@
    ========================================================================== */
 
 #nav_right {
-	width: 49.5%;
+	width:80px;
 	margin: 0 0 0 0.5%;
-	float: left;
 	background: #999;
-
-	@include respond-to(medium) {
-		width:  29%;
-	}
+	padding: 0;
 
 	@include respond-to(large) {
 		width:  24.5%;
@@ -374,6 +378,37 @@
 	@include respond-to(xlarge) {
 		width:  24.5%;
 		margin: 0;
+	}
+}
+
+.info_list {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+}
+
+#info_nav {
+	background: #999;
+	padding: 7px 0 0 13px;
+	display: block;
+}
+
+#info_drop {
+	top: 2px;
+	left: -110px;
+
+	@include respond-to(large) {
+		left: 0;
+	}
+}
+
+#info_drop li {
+	text-align: right;
+	width: 190px;
+
+	@include respond-to(large) {
+		text-align: left;
 	}
 }
 
@@ -414,8 +449,7 @@
 
 #nav_right li ul {
 	visibility: hidden;
-	top: 100%;
-	left: 0;
+	top: 2px;
 	z-index: 598;
 }
 
