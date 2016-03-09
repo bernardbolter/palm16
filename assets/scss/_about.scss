@@ -33,11 +33,12 @@
 #about_top_box img {
 	width: 100%;
 	border: 5px solid white;
+	margin: 10px 0;
 
 	@include respond-to(large) {
-		max-width: 400px;
-		margin: 20px;
-		float: right;
+		max-width: 640px;
+		margin: 20px auto;
+		display: block;
 	}
 }
 

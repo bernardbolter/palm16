@@ -1,5 +1,5 @@
 </div>
-
+<!--
 <div id="bottom_nav">
 	<ul>
 		<li class="bot_cover"><a href="<?php echo home_url( '/' ); ?>cover-stories">COVER STORIES <i class="fa fa-plus awe_font"></i></a></li>
@@ -22,6 +22,8 @@
 		<li class="bot_selfie"><a href="<?php echo home_url( '/' ); ?>selfies-with-icons">SELFIES WITH ICONS <i class="fa fa-plus awe_font"></i></a></li>
 	</ul>
 </div>
+
+-->
 
 </section><!-- #main -->
 
