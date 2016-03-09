@@ -36,9 +36,10 @@
 	margin: 10px 0;
 
 	@include respond-to(large) {
-		max-width: 640px;
-		margin: 20px auto;
+		max-width: 400px;
+		margin: 20px 0 20px 20px;
 		display: block;
+		float: right;
 	}
 }
 

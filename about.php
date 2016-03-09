@@ -16,9 +16,9 @@ Template Name: About
 		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 
-		<?php the_content(); ?>
 		<?php $about_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 		<img src="<?php echo $about_image ?>" alt="Portrait of Erik Augustin Palm" />
+		<?php the_content(); ?>
 
 		<?php endwhile; ?>
 		<?php endif; ?>

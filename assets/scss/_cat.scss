@@ -141,6 +141,18 @@
 	background: shade($tech, 60%);
 }
 
+.cover_japan {
+	background: shade($japan, 60%);
+}
+
+.cover_copywriting {
+	background: shade($copywriting, 60%);
+}
+
+.cover_translation {
+	background: shade($translation, 60%);
+}
+
 .cover_about {
 	background: shade($about, 60%);
 }
@@ -151,4 +163,8 @@
 
 .cover_tv-interviews {
 	background: shade($tv-interviews, 60%);
+}
+
+.cover_tv-factory {
+	background: shade($tv-factory, 60%);
 }

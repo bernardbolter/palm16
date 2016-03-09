@@ -83,27 +83,30 @@
 }
 
 #tv-interviews_loop_container {
-	width: 90%;
+	width: 100%;
   max-width: 1201px;
 	margin: 0 auto;
   padding: 0;
 	display: block;
 	overflow: hidden;
 
+	@include respond-to(large) {
+		width: 90%;
+	}
 }
 
 .video_box {
-  width: 90%;
+  width: 94%;
   display: block;
-  margin: 3% 5%;
+  margin: 3% 3%;
   padding: 0;
   background: white;
 
   @include respond-to(large) {
-    width: 45%;
+    width: 46%;
     display: inline-block;
     float: left;
-    margin: 2% 2.5%
+    margin: 2% 2%
   }
 }
 
