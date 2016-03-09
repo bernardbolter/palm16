@@ -36,6 +36,9 @@
 		elseif ( is_page( '100' ) ){
 			echo "<p class=\"dark_bread\">COVER STORIES <span class=\"small_select\">(IN SELECTION)</span></p>";
 		}
+		elseif ( is_page( '691' ) ){
+			echo "<p class=\"cover_tv-interviews\">TV INTERVIEWS</p>";
+		}
 		else {
 
 		}
