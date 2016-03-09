@@ -686,14 +686,14 @@
 }
 
 .nav_other a {
-	background: shade($other, 30%);
+	background: shade($selfie, 30%);
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
 }
 
 .nav_other a:hover {
-	background: $other;
+	background: $selfie;
 	@include opacity(1);
 }
 

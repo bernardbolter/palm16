@@ -2,18 +2,24 @@
 
 <div id="bottom_nav">
 	<ul>
+		<li class="bot_cover"><a href="<?php echo home_url( '/' ); ?>cover-stories">COVER STORIES <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_music"><a href="<?php echo home_url( '/' ); ?>music">MUSIC <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_film"><a href="<?php echo home_url( '/' ); ?>film">FILM <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_tv"><a href="<?php echo home_url( '/' ); ?>television">TELEVISION <i class="fa fa-plus awe_font"></i></a></li>
-		<li class="bot_art"><a href="<?php echo home_url( '/' ); ?>art-fashion">ART & FASHION <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_art"><a href="<?php echo home_url( '/' ); ?>art-fashion">ART, DESIGN & FASHION <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_society"><a href="<?php echo home_url( '/' ); ?>society-politics">SOCIETY & POLITICS <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_food"><a href="<?php echo home_url( '/' ); ?>food-travel">FOOD & TRAVEL <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_lit"><a href="<?php echo home_url( '/' ); ?>literature">LITERATURE <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_tech"><a href="<?php echo home_url( '/' ); ?>it-media-tech">IT, MEDIA & TECH <i class="fa fa-plus awe_font"></i></a></li>
-		<li class="bot_cover"><a href="<?php echo home_url( '/' ); ?>cover-stories">COVER STORIES <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_japan"><a href="<?php echo home_url( '/' ); ?>japan">JAPAN <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_copywriting"><a href="<?php echo home_url( '/' ); ?>copywriting">COPYWRITING <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_translation"><a href="<?php echo home_url( '/' ); ?>translation">TRANSLATION <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_tv-factory"><a href="<?php echo home_url( '/' ); ?>the-tv-factory">THE TV FACTORY <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_tv-interviews"><a href="<?php echo home_url( '/' ); ?>tv-interviews">TV INTERVIEWS <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_radio-interviews"><a href="<?php echo home_url( '/' ); ?>radio-interviews">RADIO INTERVIEWS <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_about"><a href="<?php echo home_url( '/' ); ?>about">ABOUT <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_photo"><a href="<?php echo home_url( '/' ); ?>photography">PHOTOGRAPHY <i class="fa fa-plus awe_font"></i></a></li>
-		<li class="bot_other"><a href="#">OTHER PROJECTS <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_selfie"><a href="<?php echo home_url( '/' ); ?>selfies-with-icons">SELFIES WITH ICONS <i class="fa fa-plus awe_font"></i></a></li>
 	</ul>
 </div>
 

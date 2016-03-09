@@ -26,6 +26,7 @@
 	width: 100%;
 	line-height: 10px;
 	text-decoration: none;
+	letter-spacing: 0.1em;
 	@include transition (all 0.5s ease);
 
 		@include respond-to(medium) {
@@ -43,9 +44,29 @@
 	color: #eee;
 }
 
+/* BOTTOM COLORS
+   ========================================================================== */
+
+.bot_cover a {
+	background: shade($cover, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_cover a:hover {
+	background: $cover;
+	@include opacity(1);
+}
+
+.bot_cover a:hover .awe_font {
+	visibility: visible;
+}
+
 .bot_music a {
-	background: shade($music, 30%);
-	color: tint($music, 30%);
+	background: shade($music, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 1s ease);
@@ -61,8 +82,8 @@
 }
 
 .bot_film a {
-	background: shade($film, 30%);
-	color: tint($film, 30%);
+	background: shade($film, 70%);
+	color:$footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -78,8 +99,8 @@
 }
 
 .bot_tv a {
-	background: shade($tv, 30%);
-	color: tint($tv, 30%);
+	background: shade($tv, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -95,8 +116,8 @@
 }
 
 .bot_art a {
-	background: shade($art, 30%);
-	color: tint($art, 30%);
+	background: shade($art, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -112,8 +133,8 @@
 }
 
 .bot_society a {
-	background: shade($society, 30%);
-	color: tint($society, 30%);
+	background: shade($society, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -129,8 +150,8 @@
 }
 
 .bot_food a {
-	background: shade($food, 30%);
-	color: tint($food, 30%);
+	background: shade($food, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -146,8 +167,8 @@
 }
 
 .bot_lit a {
-	background: shade($lit, 30%);
-	color: tint($lit, 30%);
+	background: shade($lit, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -163,8 +184,8 @@
 }
 
 .bot_tech a {
-	background: shade($tech, 30%);
-	color: tint($tech, 30%);
+	background: shade($tech, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -179,26 +200,111 @@
 	visibility: visible;
 }
 
-.bot_cover a {
-	background: shade($cover, 30%);
-	color: tint($cover, 30%);
+.bot_japan a:hover {
+	background: $japan;
+	@include opacity(1);
+}
+
+.bot_japan a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_japan a {
+	background: shade($japan, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
 }
 
-.bot_cover a:hover {
-	background: $cover;
+.bot_copywriting a:hover {
+	background: $copywriting;
 	@include opacity(1);
 }
 
-.bot_cover a:hover .awe_font {
+.bot_copywriting a:hover .awe_font {
 	visibility: visible;
 }
 
+.bot_copywriting a {
+	background: shade($copywriting, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_translation a:hover {
+	background: $translation;
+	@include opacity(1);
+}
+
+.bot_translation a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_translation a {
+	background: shade($translation, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_tv-factory a:hover {
+	background: $tv-factory;
+	@include opacity(1);
+}
+
+.bot_tv-factory a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_tv-factory a {
+	background: shade($tv-factory, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_tv-interviews a:hover {
+	background: $tv-interviews;
+	@include opacity(1);
+}
+
+.bot_tv-interviews a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_tv-interviews a {
+	background: shade($tv-interviews, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_radio-interviews a:hover {
+	background: $radio-interviews;
+	@include opacity(1);
+}
+
+.bot_radio-interviews a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_radio-interviews a {
+	background: shade($radio-interviews, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
 .bot_about a {
-	background: shade($about, 30%);
-	color: tint($about, 30%);
+	background: shade($about, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -214,8 +320,8 @@
 }
 
 .bot_photo a {
-	background: shade($photo, 30%);
-	color: tint($photo, 30%);
+	background: shade($photo, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
@@ -230,20 +336,20 @@
 	visibility: visible;
 }
 
-.bot_other a {
-	background: shade($other, 30%);
-	color: tint($other, 30%);
+.bot_selfie a {
+	background: shade($selfie, 70%);
+	color: $footer-text;
 	@include opacity(0.85);
 	display: block;
 	@include transition (all 0.5s ease);
 }
 
-.bot_other a:hover {
-	background: $other;
+.bot_selfie a:hover {
+	background: $selfie;
 	@include opacity(1);
 }
 
-.bot_other a:hover .awe_font {
+.bot_selfie a:hover .awe_font {
 	visibility: visible;
 }
 
@@ -287,11 +393,11 @@
 	}
 
 	@include respond-to(large) {
-		margin: 0 10% 0 0;	
+		margin: 0 10% 0 0;
 	}
 
 	@include respond-to(xlarge) {
-		margin: 0 14% 0 0;	
+		margin: 0 14% 0 0;
 	}
 }
 
@@ -368,11 +474,11 @@
 	margin-bottom: 3px;
 }
 
-.wpcf7 input:hover, 
-.wpcf7 input:focus, 
-.wpcf7 input:active, 
-.wpcf7 textarea:hover, 
-.wpcf7 textarea:focus, 
+.wpcf7 input:hover,
+.wpcf7 input:focus,
+.wpcf7 input:active,
+.wpcf7 textarea:hover,
+.wpcf7 textarea:focus,
 .wpcf7 textarea:active {
   background: #eee;
   outline: none;

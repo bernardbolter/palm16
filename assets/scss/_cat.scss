@@ -105,43 +105,46 @@
 .clear_date {
 	@include clearfix;
 }
+.cover_stories {
+		background: shade($cover, 60%);
+}
 
 .cover_music {
-	background: $music;
+	background: shade($music, 60%);
 }
 
 .cover_film {
-	background: $film;
+	background: shade($film, 60%);
 }
 
 .cover_tv {
-	background: $tv;
+	background: shade($tv, 60%);
 }
 
 .cover_art {
-	background: $art;
+	background: shade($art, 60%);
 }
 
 .cover_society {
-	background: $society;
+	background: shade($society, 60%);
 }
 
 .cover_food {
-	background: $food;
+	background: shade($food, 60%);
 }
 
 .cover_lit {
-	background: $lit;
+	background: shade($lit, 60%);
 }
 
 .cover_tech {
-	background: $tech;
+	background: shade($tech, 60%);
 }
 
 .cover_about {
-	background: $about;
+	background: shade($about, 60%);
 }
 
 .cover_photo {
-	background: $photo;
+	background: shade($photo, 60%);
 }

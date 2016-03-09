@@ -1,8 +1,8 @@
 <div id="bread_wrap">
 	<?php
-		if ( is_page( '25' ) ) {
+		if ( is_page( '274' ) ) {
 			echo "<p class=\"cover_music\">MUSIC</p>";
-		} 
+		}
 		elseif ( is_page( '102' ) ){
 			echo "<p class=\"cover_film\">FILM</p>";
 		}
@@ -10,7 +10,7 @@
 			echo "<p class=\"cover_tv\">TELEVISION</p>";
 		}
 		elseif ( is_page( '106' ) ){
-			echo "<p class=\"cover_art\">ART & FASHION</p>";
+			echo "<p class=\"cover_art\">ART, DESIGN & FASHION</p>";
 		}
 		elseif ( is_page( '108' ) ){
 			echo "<p class=\"cover_society\">SOCIETY & POLITICS</p>";
