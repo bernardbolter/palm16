@@ -217,6 +217,23 @@
 	@include transition (all 0.5s ease);
 }
 
+.bot_psycho a:hover {
+	background: $psycho;
+	@include opacity(1);
+}
+
+.bot_psycho a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_psycho a {
+	background: shade($psycho, 70%);
+	color: $footer-text;
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
 .bot_copywriting a:hover {
 	background: $copywriting;
 	@include opacity(1);

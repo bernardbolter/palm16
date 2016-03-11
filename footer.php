@@ -12,6 +12,7 @@
 		<li class="bot_lit"><a href="<?php echo home_url( '/' ); ?>literature">LITERATURE <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_tech"><a href="<?php echo home_url( '/' ); ?>it-media-tech">IT, MEDIA & TECH <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_japan"><a href="<?php echo home_url( '/' ); ?>japan">JAPAN <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_psycho"><a href="<?php echo home_url( '/' ); ?>psychology">PSYCHOLOGY <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_copywriting"><a href="<?php echo home_url( '/' ); ?>copywriting">COPYWRITING <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_translation"><a href="<?php echo home_url( '/' ); ?>translation">TRANSLATION <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_tv-factory"><a href="<?php echo home_url( '/' ); ?>the-tv-factory">THE TV FACTORY <i class="fa fa-plus awe_font"></i></a></li>

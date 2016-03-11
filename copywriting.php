@@ -10,6 +10,17 @@ Template Name: Copywriting
 <?php get_template_part( 'nav' ); ?>
 <?php get_template_part( 'breadcrumb' ); ?>
 
+<div id="photo_bio_box" class="clearfix">
+	<p class="photo_bio_plus"><i class="fa fa-plus"></i></p>
+	<?php if (have_posts()) : ?>
+	<?php while (have_posts()) : the_post(); ?>
+	<h1 class="photo_bio_text">
+		<?php the_content(); ?>
+	</h1>
+	<?php endwhile; ?>
+	<?php endif; ?>
+</div> <!-- photo_bio_box -->
+
 <div id="cat_loop_wrap">
 	<div id="cat_loop_list">
 
