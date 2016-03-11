@@ -14,8 +14,6 @@
 	display: block;
 	overflow: hidden;
 	margin: 5px auto;
-	border-bottom: 1px solid black;
-	padding-bottom: 15px;
 
 	@include respond-to(medium) {
 		width: 85%;
@@ -77,6 +75,93 @@
 	line-height: 16px;
 }
 
+
+/******************************************************************************\
+	ABOUT MIDDLE TOP
+\******************************************************************************/
+
+#about_mid_top_box {
+	width: 90%;
+	display: block;
+	overflow: hidden;
+	margin: 5px auto;
+
+	@include respond-to(medium) {
+		width: 85%;
+	}
+
+	@include respond-to(large) {
+		width: 80%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 75%;
+	}
+}
+
+.about_interview_box {
+	width: 100%;
+	border: 5px solid white;
+	margin: 10px 0 20px;
+	background: white;
+
+	@include respond-to(large) {
+		max-width: 400px;
+		margin: 20px 20px 10px 0;
+		display: block;
+		float: left;
+	}
+}
+
+.about_interview_box img {
+	width: 100%;
+}
+
+.about_interview_box_text {
+	font-family: $body-font;
+	@include font-size(1.1);
+	background: white;
+	padding: 3px 3px 3px 0;
+	color: #999;
+	text-align: right;
+	text-transform: none;
+	margin: 0;
+}
+
+#about_mid_top_box p {
+	font-family: $body-font;
+	@include font-size(1.8);
+	line-height: 22px;
+	text-indent: 20px;
+	margin: 10px 0;
+	color: #666;
+}
+
+.about_pad {
+	@include respond-to(large) {
+		margin: 60px 0 0 !important;
+	}
+}
+
+#about_mid_top_box a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #444;
+}
+
+#about_mid_top_box a:hover {
+	text-decoration: underline;
+}
+
+#about_top_box h4 {
+	text-align: center;
+	font-family: $base-font;
+	text-indent: 0;
+	@include font-size(1.2);
+	color: #666;
+	line-height: 16px;
+}
+
 /******************************************************************************\
 	ABOUT CELEBS
 \******************************************************************************/
@@ -87,7 +172,7 @@
 	overflow: hidden;
 	margin: 5px auto 0;
 	padding-bottom: 20px;
-	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 	@include transition (all 0.5s ease);
 
 	@media (min-width: 420px) {
@@ -172,6 +257,16 @@
 	text-indent: 20px;
 	margin: 10px 0;
 	color: #666;
+}
+
+#about_mid_box img {
+	width: 100%;
+	margin: 0 auto 20px;
+	display: block;
+
+	@include respond-to(large) {
+		max-width: 80%;
+	}
 }
 
 #about_mid_box h5 {

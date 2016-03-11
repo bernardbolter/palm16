@@ -33,5 +33,6 @@ Template Name: Selfies with Icons
 		<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
 
 	</div> <!-- about_celebs -->
+</div>
 
 <?php get_footer(); ?>

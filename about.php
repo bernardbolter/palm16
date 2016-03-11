@@ -25,6 +25,29 @@ Template Name: About
 
 	</div> <!-- about_top_box -->
 
+	<div id="about_mid_top_box" class="clearfix">
+
+		<?php $about_mid_top_loop = new WP_Query( 'page_id=719' ); ?>
+
+
+			<?php if ( $about_mid_top_loop->have_posts() ) : ?>
+			<?php while ( $about_mid_top_loop->have_posts() ) : $about_mid_top_loop->the_post(); ?>
+
+				<?php $about_interview_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+				<div class="about_interview_box">
+					<img src="<?php echo $about_interview_image ?>" alt="Erik Augustin Palm Interviewing" />
+					<h4 class="about_interview_box_text"><?php echo get_field('about_interview_text'); ?></h4>
+				</div>
+			<?php the_content(); ?>
+
+	 		<?php endwhile; ?>
+			<?php endif; ?>
+
+		<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
+
+	</div> <!-- about_mid_box -->
+
+
 	<div id="about_mid_box" class="clearfix">
 
 		<?php $about_two_loop = new WP_Query( 'page_id=260' ); ?>
@@ -33,6 +56,8 @@ Template Name: About
 			<?php if ( $about_two_loop->have_posts() ) : ?>
 			<?php while ( $about_two_loop->have_posts() ) : $about_two_loop->the_post(); ?>
 
+				<?php $about_news_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+				<img src="<?php echo $about_news_image ?>" alt="Newspaper Portrait of Erik Augustin Palm" />
 			<?php the_content(); ?>
 
 	 		<?php endwhile; ?>
@@ -57,6 +82,28 @@ Template Name: About
 		<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
 
 	</div> <!-- about_bot_box -->
+
+	<div id="about_celebs" class="clearfix">
+
+		<?php $args = array( 'post_type' => 'chilling_with', 'posts_per_page' => -1, 'order' => 'ASC' ); ?>
+		<?php $celeb_loop = new WP_Query( $args ); ?>
+
+
+			<?php if ( $celeb_loop->have_posts() ) : ?>
+			<?php while ( $celeb_loop->have_posts() ) : $celeb_loop->the_post(); ?>
+
+			<div class="about_celeb_wrap">
+				<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+				<img src="<?php echo $feat_image ?>" alt="photo chilling with <?php the_title() ?>" />
+				<p><?php the_title() ?></p>
+			</div>
+
+			<?php endwhile; ?>
+		<?php endif; ?>
+
+		<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
+
+	</div> <!-- about_celebs -->
 
 	<div id="about_clients_box">
 		<p class="about_clients_header">CLIENTS <span class="about_header_client_small">(IN SELECTION)</span>:</p>
