@@ -434,6 +434,22 @@
 	visibility: visible;
 }
 
+.nav_psychology a {
+	background: shade($psycho, 60%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_psychology a:hover {
+	background: $psycho;
+	@include opacity(1);
+}
+
+.nav_psychology a:hover .awe_font {
+	visibility: visible;
+}
+
 .nav_copywriting a {
 	background: shade($copywriting, 60%);
 	@include opacity(0.85);

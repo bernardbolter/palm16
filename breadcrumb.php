@@ -27,6 +27,9 @@
 		elseif ( is_page( '706' ) ){
 			echo "<p class=\"cover_japan\">JAPAN</p>";
 		}
+		elseif ( is_page( '713' ) ){
+			echo "<p class=\"cover_psycho\">PSYCHOLOGY</p>";
+		}
 		elseif ( is_page( '708' ) ){
 			echo "<p class=\"cover_copywriting\">COPYWRITING</p>";
 		}

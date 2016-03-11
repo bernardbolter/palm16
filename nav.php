@@ -18,6 +18,7 @@
 					<li class="nav_lit"><a href="<?php echo home_url( '/' ); ?>literature"><i class="fa fa-plus awe_font"></i>LITERATURE</a></li>
 					<li class="nav_tech"><a href="<?php echo home_url( '/' ); ?>it-media-tech"><i class="fa fa-plus awe_font"></i>IT, MEDIA & TECH</a></li>
 					<li class="nav_japan"><a href="<?php echo home_url( '/' ); ?>japan"><i class="fa fa-plus awe_font"></i>JAPAN</a></li>
+					<li class="nav_psychology"><a href="<?php echo home_url( '/' ); ?>psychology"><i class="fa fa-plus awe_font"></i>PSYCHOLOGY</a></li>
 					<li class="nav_copywriting"><a href="<?php echo home_url( '/' ); ?>copywriting"><i class="fa fa-plus awe_font"></i>COPYWRITING</a></li>
 					<li class="nav_translation"><a href="<?php echo home_url( '/' ); ?>translation"><i class="fa fa-plus awe_font"></i>TRANSLATION</a></li>
 				</ul> <!-- articles_drop -->
