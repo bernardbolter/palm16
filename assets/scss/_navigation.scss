@@ -153,13 +153,14 @@
 
 #radio_drop {
 	left: 0px;
+	width: 250px !important;
 
 	@include respond-to(medium) {
-		left: -125px;
+		left: -155px;
 	}
 
 	@include respond-to(large) {
-		left: -132px;
+		left: -162px;
 	}
 }
 

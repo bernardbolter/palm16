@@ -33,7 +33,7 @@
 			<li class="radio_list">
 				<a href="#" id="radio_nav">RADIO</a>
 				<ul id="radio_drop">
-					<li class="nav_radio-interviews"><a href="<?php echo home_url( '/' ); ?>radio-interviews"><i class="fa fa-plus awe_font"></i>INTERVIEWS</a></li>
+					<li class="nav_radio-interviews"><a href="<?php echo home_url( '/' ); ?>radio-interviews"><i class="fa fa-plus awe_font"></i>COMMENTARY & INTERVIEWS</a></li>
 				</ul> <!-- articles_drop -->
 			</li>
 		</ul><!-- #nav_right -->
