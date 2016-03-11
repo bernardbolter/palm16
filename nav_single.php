@@ -43,7 +43,7 @@
 				<ul id="info_drop">
 					<li class="nav_about"><a href="<?php echo home_url( '/' ); ?>about">ABOUT<i class="fa fa-plus awe_font"></i></a></li>
 					<li class="nav_photo"><a href="<?php echo home_url( '/' ); ?>photography">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
-					<li class="nav_other"><a href="<?php echo home_url( '/' ); ?>selfies-with-icons">SELFIES WITH ICONS<i class="fa fa-plus awe_font"></i></a></li>
+					<li class="nav_other"><a href="<?php echo home_url( '/' ); ?>selfies-with-icons">SELFIES WITH STARS<i class="fa fa-plus awe_font"></i></a></li>
 					<li id="contact_but" class="nav_contact"><a href="#contact">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
 				</ul> <!-- info_drop -->
 			</li>

@@ -85,7 +85,7 @@ Template Name: About
 
 	<div id="about_celebs" class="clearfix">
 
-		<?php $args = array( 'post_type' => 'chilling_with', 'posts_per_page' => -1, 'order' => 'ASC' ); ?>
+		<?php $args = array( 'post_type' => 'chilling_with', 'posts_per_page' => 8, 'order' => 'ASC' ); ?>
 		<?php $celeb_loop = new WP_Query( $args ); ?>
 
 
