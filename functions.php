@@ -84,7 +84,7 @@ add_action( 'init', 'augustinpalm_theme_editor_style' );
 /**
  * Enqueue augustinpalm_theme scripts
  * @return void
- */
+
 function augustinpalm_theme_enqueue_scripts() {
 	wp_enqueue_style( 'augustinpalm_theme-styles', get_stylesheet_uri(), array(), '1.0' );
 	wp_enqueue_script( 'jquery' );
@@ -92,7 +92,7 @@ function augustinpalm_theme_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'augustinpalm_theme_enqueue_scripts' );
 
-
+*/
 /******************************************************************************\
 	Content functions
 \******************************************************************************/
