@@ -23,28 +23,8 @@ Template Name: Radio Interviews
 <?php endif; ?>
 
 <div class="radio_bottom_wrapper clearfix">
-	<div class="radio_video_wrapper">
-
-		<?php $radio_video_args = array( 'post_type' => 'radio_video', 'posts_per_page' => -1, 'order' => 'ASC' ); ?>
-		<?php $radio_video_loop = new WP_Query( $radio_video_args ); ?>
-
-			<?php if ( $radio_video_loop->have_posts() ) : ?>
-			<?php while ( $radio_video_loop->have_posts() ) : $radio_video_loop->the_post(); ?>
-
-		<div class="audio_video_box">
-				<div class="audio_video_wrapper"><?php echo get_field('radio_video_link'); ?></div>
-				<h2 class="audio_video_desc"><?php echo get_field('radio_interview_video_text'); ?></h2>
-			</a>
-		</div> <!-- photo_box -->
-
-		<?php endwhile; ?>
-	<?php endif; ?>
-
-	</div> <!-- radio-video-wrapper -->
 
 	<div class="radio-audio-wrap">
-
-		<h1 class="aduio_files_title">Audio:</h1>
 
 		<?php $args = array( 'post_type' => 'radio-interviews', 'posts_per_page' => -1, 'order' => 'ASC' ); ?>
 		<?php $radio_loop = new WP_Query( $args ); ?>
@@ -64,7 +44,7 @@ Template Name: Radio Interviews
 					<h2 class="radio_title"><?php echo get_field('radio_audio_title'); ?></h2>
 					<h5 class="radio_desc"><?php echo get_field('radio_audio_description'); ?></h5>
 				</div>
-	 		</div> <!-- radio_box -->
+			</div> <!-- radio_box -->
 
 	<?php endwhile; ?>
 <?php endif; ?>
@@ -81,6 +61,25 @@ Template Name: Radio Interviews
 <?php endif; ?>
 
 </div> <!-- radio_audio_wrap -->
+
+	<div class="radio_video_wrapper">
+
+		<?php $radio_video_args = array( 'post_type' => 'radio_video', 'posts_per_page' => -1, 'order' => 'ASC' ); ?>
+		<?php $radio_video_loop = new WP_Query( $radio_video_args ); ?>
+
+			<?php if ( $radio_video_loop->have_posts() ) : ?>
+			<?php while ( $radio_video_loop->have_posts() ) : $radio_video_loop->the_post(); ?>
+
+		<div class="audio_video_box">
+				<div class="audio_video_wrapper"><?php echo get_field('radio_video_link'); ?></div>
+				<h2 class="audio_video_desc"><?php echo get_field('radio_interview_video_text'); ?></h2>
+			</a>
+		</div> <!-- photo_box -->
+
+		<?php endwhile; ?>
+	<?php endif; ?>
+
+	</div> <!-- radio-video-wrapper -->
 
 </div> <!-- radio_bottom_wrapper -->
 

@@ -27,7 +27,7 @@
 
   @include respond-to(large) {
     width: 50%;
-    float: left;
+    float: right;
   }
 }
 
@@ -85,7 +85,7 @@
   @include respond-to(large) {
     width: 46%;
     margin: 20px 0 0 4%;
-    float: right;
+    float: left;
   }
 }
 
