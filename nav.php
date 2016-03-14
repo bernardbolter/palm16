@@ -3,7 +3,7 @@
 	<nav id="navigation" role="navigation">
 		<ul id="nav_left">
 			<div class="erik_text_wrap">
-				<p id="erik_text">ERIK AUGUSTIN PALM.</p>
+				<a href="<?php echo home_url( '/' ); ?>"><p id="erik_text">ERIK AUGUSTIN PALM.</p></a>
 			</div>
 			<li class="articles_list">
 				<a href="#" id="articles_nav">WRITING</a>
